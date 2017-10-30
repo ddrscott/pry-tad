@@ -1,8 +1,22 @@
 # Pry::Tad
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pry/tad`. To experiment with that code, run `bin/console` for an interactive prompt.
+WIP
 
-TODO: Delete this and the text above, and describe your gem
+Provides `tadin` console script to interact with `tadviewer` GUI app.
+
+TODO:
+- create `tad` command in Pry and Kernel to open up `tadviewer` in console
+  or other Ruby environments.
+
+## Usage
+
+```sh
+# using stdin
+cat interesting.csv | tadin
+
+# Open file directly, but you should use `tad` directly in this case.
+tadin interesting.csv
+```
 
 ## Installation
 
@@ -20,9 +34,9 @@ Or install it yourself as:
 
     $ gem install pry-tad
 
-## Usage
+Register the executable in `rbevn`:
 
-TODO: Write usage instructions here
+    rbenv rehash
 
 ## Development
 

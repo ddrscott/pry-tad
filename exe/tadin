@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'pry/tad'
+# Helper to open Tad from stdin.
+# If file is giving, `tadviewer` is read directly.
+# If stdin is given, contents are written to file first.
+Pry::Tad.run_argf(ARGF)
